@@ -53,7 +53,7 @@ spec:
     - containerPort: 80
 ```
 
-### create pod and see details about it
+## Create pod and see details about it
 ```kubectl create -f pod.yml
 kubectl get pods
 kubectl get pods -w    # To see live execution of pods.
