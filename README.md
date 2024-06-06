@@ -32,7 +32,7 @@ A pod is like a wrapper for a container. It works like a Docker container. Insid
 
 ## YAML file written for pods.
 ####  All Kubernetes Commands:https://kubernetes.io/de/docs/reference/kubectl/cheatsheet/
-# Kubernetes Configurations
+## Kubernetes Configurations
 
 This repository contains Kubernetes configuration files for various resources.
 
@@ -51,3 +51,15 @@ spec:
     image: nginx:1.14.2
     ports:
     - containerPort: 80
+
+```kubectl create -f pod.yml
+kubectl get pods
+kubectl get pods -w    # To see live execution of pods.
+kubectl get all
+kubectl get all -A
+kubectl get pods -o wide
+minikube ssh          # login to your minikube kubernetes cluster.
+docker@minikube:~$ curl 10.244.0.3
+kubectl logs "pods-name"              # Important for interview
+kubectl describe pod "pod-name"        # Important for interview
+
