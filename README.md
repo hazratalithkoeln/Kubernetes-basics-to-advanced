@@ -30,6 +30,15 @@ A pod is like a wrapper for a container. It works like a Docker container. Insid
 
 1. Kubernetes will allow you to do shared networking, share files, and share storage. Inside a single pod container, pods can talk to each other by using localhost.
 
-YAML file written for pods.
-
-## All Kubernetes Commands:https://kubernetes.io/de/docs/reference/kubectl/cheatsheet/
+## YAML file written for pods.
+# All Kubernetes Commands:https://kubernetes.io/de/docs/reference/kubectl/cheatsheet/
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx
+spec:
+  containers:
+  - name: nginx
+    image: nginx:1.14.2
+    ports:
+    - containerPort: 80
