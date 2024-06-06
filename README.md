@@ -3,16 +3,12 @@
 Kubernetes is an open-source container orchestration system for automating software deployment, scaling, and management.
 Today, Kubernetes is widely used in production to manage Docker and essentially any other type of container runtime. While Docker includes its own orchestration tool, called Docker Swarm, most developers choose Kubernetes container orchestration instead.
 
-Why Kubernetes?
+## Why Kubernetes?
 
-Cluster
-
-Auto-healing
-
-Auto-scaling
-
-Multiple enterprises support.
-
+1. Cluster
+2. Auto-healing
+3. Auto-scaling
+4. Multiple enterprises support.
 Note: Docker does not have this support.
 
 Control plane (master node):
