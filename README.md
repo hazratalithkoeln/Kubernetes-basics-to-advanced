@@ -10,8 +10,7 @@ Today, Kubernetes is widely used in production to manage Docker and essentially 
 3. Auto-scaling
 4. Multiple enterprises support.
    
-### Note: 
-Docker does not have this support.
+### Note: ###Docker does not have this support.
 
 Control plane (master node):
 
