@@ -51,6 +51,7 @@ spec:
     image: nginx:1.14.2
     ports:
     - containerPort: 80
+```
 
 ### create pod and see details about it
 ```kubectl create -f pod.yml
@@ -63,4 +64,8 @@ minikube ssh          # login to your minikube kubernetes cluster.
 docker@minikube:~$ curl 10.244.0.3
 kubectl logs "pods-name"             
 kubectl describe pod "pod-name"       
+
+
+
+
 
