@@ -13,8 +13,8 @@ Today, Kubernetes is widely used in production to manage Docker and essentially 
 #### Note: Docker does not have this support.
 ## Kubernets architecture
 ### Control plane (master node):
-API server: It exposes basically Kubernetes to the other world. It takes all the requests from external worlds.
-etcd: It is basically a key value store. The entire Kubernetes cluster information is stored as objects that are key-value pairs inside this, etcd.
+1. API server: It exposes basically Kubernetes to the other world. It takes all the requests from external worlds.
+2. etcd: It is basically a key value store. The entire Kubernetes cluster information is stored as objects that are key-value pairs inside this, etcd.
 Scheduler: responsible for scheduling the pods or scheduling the resources of Kubernetes. It is receiving the information from an API server.
 Controller manager: This controls the replica set. Manage the Kubernetes in-build controller.
 Example: replica set
