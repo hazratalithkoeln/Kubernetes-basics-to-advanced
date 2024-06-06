@@ -32,7 +32,15 @@ A pod is like a wrapper for a container. It works like a Docker container. Insid
 
 ## YAML file written for pods.
 ####  All Kubernetes Commands:https://kubernetes.io/de/docs/reference/kubectl/cheatsheet/
-## 
+# Kubernetes Configurations
+
+This repository contains Kubernetes configuration files for various resources.
+
+## Nginx Pod Configuration
+
+Below is the configuration for an Nginx Pod:
+
+```yaml
 apiVersion: v1
 kind: Pod
 metadata:
@@ -43,4 +51,3 @@ spec:
     image: nginx:1.14.2
     ports:
     - containerPort: 80
-##
