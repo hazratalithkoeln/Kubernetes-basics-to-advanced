@@ -23,3 +23,13 @@ Cloud controller manager (CCM): This is an open-source utility. If you have on-p
 1. Kubelet: responsible for maintaining, creating, or running a pod. If pods are not running, then they will take the necessary actions using the Kubernetes control plane.
 2. Kube-Proxy: Provide networking, like generating the IP address or load-balancing. Basically, it uses IP tables on your Linux machine. When we want to use auto-scaling, then this service will create a network between pods.
 3. Container runtime: responsible for running a container.
+
+
+## Pod
+A pod is like a wrapper for a container. It works like a Docker container. Inside the pod, there will be a container. A pod can be a single container or a group of containers. In most cases, a pod has a single container. If you put a group of containers in a pod, then there will be some advantages. You can get access to the container application through the pod cluster IP (kube-proxy generates the cluster IP address.).
+
+1. Kubernetes will allow you to do shared networking, share files, and share storage. Inside a single pod container, pods can talk to each other by using localhost.
+
+YAML file written for pods.
+
+## All Kubernetes Commands:https://kubernetes.io/de/docs/reference/kubectl/cheatsheet/
