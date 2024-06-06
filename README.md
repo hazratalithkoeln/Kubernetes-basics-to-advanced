@@ -52,7 +52,9 @@ spec:
     ports:
     - containerPort: 80
 
-```kubectl create -f pod.yml
+### create pod and see details about it
+```
+kubectl create -f pod.yml
 kubectl get pods
 kubectl get pods -w    # To see live execution of pods.
 kubectl get all
@@ -60,6 +62,6 @@ kubectl get all -A
 kubectl get pods -o wide
 minikube ssh          # login to your minikube kubernetes cluster.
 docker@minikube:~$ curl 10.244.0.3
-kubectl logs "pods-name"              # Important for interview
-kubectl describe pod "pod-name"        # Important for interview
+kubectl logs "pods-name"             
+kubectl describe pod "pod-name"       
 
